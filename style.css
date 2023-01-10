@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 45px;
+    line-height: 55px;
+    color: black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section_p1{
+    padding: 40px 80px;
+}
+
+.section_m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+button.common{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ;
+}
+/* <!-- Home Page Start --> */
+
+/* <!-- Header start --> */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    /* background: #4458b3e8; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background: rgb(4,8,17);
+    background: linear-gradient(90deg, rgba(4,8,17,1) 0%, rgba(1,125,125,1) 100%);
+    height: 10vh;
+    top: 0;
+    left:0 ;
+    position: sticky;
+    z-index: 1000;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+    transition: .4s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: brown;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: teal;
+    position: absolute;
+    bottom: -3.5px;
+    left: 26%;
+}
+
+/* making menu for phone */
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+
+/* <!-- Header end --> */
+
+/* <!-- Home Start --> */
+#home{
+    background: url("Image/bc.jpg");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    background-position: top 2% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#home h4{
+    padding-bottom: 15px;
+}
+#home h2{
+    color: teal;
+}
+
+#home button{
+    background-image: url("Image/button.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    color: teal;
+    padding: 14px 80px 14px 65px;
+}
+/* <!-- Home end --> */
+
+
+
+
+
+/* <!-- Product Page Start --> */
+#Product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Product .pro_box1{
+    width: 180px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    padding:25px 15px;
+}
+
+#Product .pro_box1:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#Product .pro_box1 img{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#Product .pro_box1 h6{
+    display: inline-block;
+    background: rgba(89, 174, 174, 0.727);
+    color: brown;
+    padding: 8px 8px 6px 8px;
+    border-radius: 5px;
+    line-height: 1;
+}
+#Product .pro_box1:nth-child(2) h6{
+    background-color: rgba(220, 20, 60, 0.59);
+}
+#Product .pro_box1:nth-child(3) h6{
+    background-color: rgb(20, 220, 50);
+}
+#Product .pro_box1:nth-child(4) h6{
+    background-color: rgb(20, 183, 220);
+}
+#Product .pro_box1:nth-child(5) h6{
+    background-color: rgb(190, 220, 20);
+}
+#Product .pro_box1:nth-child(6) h6{
+    background-color: rgb(220, 137, 20);
+}
+
+/* All cloth list */
+#Allproduct{
+    text-align: center;
+}
+
+.pro_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#Allproduct .pro{
+    width: 25%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+}
+#Allproduct .pro img{
+    width: 100%;
+    border-radius: 25px;
+}
+#Allproduct .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#Allproduct .pro .deatils{
+    text-align: start;
+    padding: 15px 10px;
+}
+#Allproduct .pro .deatils span{
+    color: cornflowerblue;
+    font-size: 17px;
+}
+#Allproduct .pro .deatils h5{
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.905);
+    font-size: 15px;
+}
+#Allproduct .pro .deatils h4{
+    padding-top: 7px;
+    color: rgba(227, 14, 14, 0.905);
+    font-size: 15px;
+}
+#Allproduct .pro .deatils i{
+    color: yellow;
+    font-size: 10px;
+}
+#Allproduct .pro .carting{
+    color: rgb(255, 94, 0);
+    /* font-size: 30px; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: rgba(180, 61, 40, 0.192);
+    border: 1px solid rgba(0, 0, 0, 0.207);
+    position: absolute;
+    bottom: 20px ;
+    right: 15px;
+}
+/* <!-- Product Page End --> */
+
+
+
+/* <!-- Banner start --> */
+#banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("Image/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 18px;
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: rgb(239, 9, 9);
+}
+
+#banner button:hover{
+    background-color: teal;
+    color: white;
+}
+
+/* <!-- Banner end --> */
+
+
+/* <!-- Banner advertisement start --> */
+#Banner_list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#Banner_list .Banner_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("Image/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#Banner_list .banner_2{
+    background-image: url("Image/banner/b10.jpg");
+}
+#Banner_list h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Banner_list h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+#Banner_list span{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#Banner_list button{
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    outline: none;
+    transition: .2s;
+    color: #fff;
+}
+
+#Banner_list button:hover{
+    background-color: teal;
+    color: white;
+}
+
+
+/* Small banner  */
+#Banner_list2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+#Banner_list2 .Banner_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("Image/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#Banner_list2 h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#Banner_list2 h3{
+    color: rgba(255, 0, 0, 0.775);
+    font-weight: 800;
+    font-size: 15px;
+}
+/* <!-- Banner advertisement end --> */
+
+
+/* News Start */
+#news{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("Image/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: rgb(39, 16, 142);
+}
+
+#news .newsTxt h4{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+#news .newsTxt p{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+#news .newsTxt p span{
+    color: yellow;
+}
+#news .forms {
+    display: flex;
+    width: 40%;
+    /* position: relative; */
+    /* left: 15%; */
+}
+
+#news input{
+    width: 100%;
+    height:3.125rem;
+    /* background-color: transparent; */
+    font-size: 15px;
+    padding: 0 1.25em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#news input::placeholder{
+    /* font-size: 10px; */
+    font-weight: 600;
+    padding:20px;
+    color: black;
+}
+#news button{
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: teal;
+    color: rgb(252, 249, 249);
+}
+/* News end */
+
+
+
+/* <!-- Footer  Start --> */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+footer p{
+    font-size: 13px;
+    margin:0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    margin-bottom:15px;
+    text-decoration: none;
+    color: black;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: rgb(44, 41, 41);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: teal;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+}
+/* <!-- Footer End --> */
+
+/* <!-- Home Page End --> */
+
+
+
+/* Responsive Design Start */
+/* Tablet */
+@media (max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: .5s ease;
+    }
+
+    #navbar.active{
+        right:0px;
+    }
+
+    /* close menu in phone mode */
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color: black;
+        font-size: 24px;
+    }
+    /* hiding cart in phone mode  */
+    #Add_item{
+        display: none;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    /*open menu in phone mode */
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile i{
+        color: black;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    /* arranging background */
+    #home{
+        height: 90vh;
+        padding: 0 80px; 
+        background-position: top 30% right 30%;
+    }
+
+    #Product {
+        justify-content: center;
+    }
+
+    #Product .pro_box1 {
+        margin: 15px 15px;
+    }
+
+    .section_p1 {
+        padding: 40px 40px;
+    }
+
+    .pro_container {
+        justify-content: center;
+    }
+    #Allproduct .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #Banner_list .Banner_1 {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #Banner_list2 {
+       padding: 0 40px;
+    }
+
+    #Banner_list2 .Banner_1 {
+        width: 29%;
+    }
+
+    #news .forms {
+        width: 70%;
+    }
+}
+
+
+
+/* Phone */
+@media (max-width:477px){
+    #header {
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #navbar{
+        padding:0 20px;
+        background-position: 55%;
+    }
+
+    #Product .pro_box1 {
+        margin:0 0 15px 0;
+        width: 155px;
+    }
+
+    #Product {
+        justify-content: space-between;
+    }
+    .section_p1 {
+        padding:20px;
+    }
+
+    .pro_container {
+        justify-content: center;
+    }
+    #Allproduct .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #Banner_list .Banner_1 {
+        height: 40vh;
+    }
+
+    #Banner_list2 {
+       padding: 0 20px;
+    }
+
+    #Banner_list2 .Banner_1 {
+        width: 100%;
+    }
+
+    #news .forms {
+        width: 100%;
+    }
+}
+/* Responsive Design End */
