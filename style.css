@@ -1267,7 +1267,12 @@ footer .copyright{
     #news .forms {
         width: 100%;
     }
-
+        /* product banner start */
+    #page_header1 {
+        background-position: left;
+        height: 11vh;
+    }
+    /* product end */
 
     /* single product */
     #product_details {
