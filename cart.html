@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header start -->
+    <section id="header">
+        <!-- <a href="#"><img src="Image/logo.png" class="logo" alt="X"></a> -->
+        <h3 class="textLogonav">↣ Classy <span>/</span> Curve ↢</h3>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="Add_item"><a class="active"  href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+    <!-- Header end -->
+
+<!-- Heading Start -->
+    <section id="about_header">
+        <h2>New <strong> New </strong> New</h2>
+        <p><strong><i class="fa-regular fa-star"></i> Cop the Hottest new Trend <i class="fa-regular fa-star"></i></strong></p>
+    </section>
+<!-- Heading End -->
+
+
+<!-- cart start -->
+<section id="cart" class="section_p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Sub-Total</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                <td><img src="Image/products/f1.jpg" alt="X"></td>
+                <td>T - Shirt</td>
+                <td>&#8377 8000</td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 8000</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                <td><img src="Image/products/f2.jpg" alt="X"></td>
+                <td>T - Shirt</td>
+                <td>&#8377 8000</td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 8000</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                <td><img src="Image/products/f3.jpg" alt="X"></td>
+                <td>T - Shirt</td>
+                <td>&#8377 8000</td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 8000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="cart_add" class="section_p1">
+    <div id="id_coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="common">Apply</button>
+        </div>
+    </div>
+
+    <!-- ------- -->
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Total</td>
+                <td>&#8377 24000</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>&#8377 24000</strong></td>
+            </tr>
+        </table>
+        <button class="common">Proceed to checkout</button>
+    </div>
+</section>
+<!-- cart end -->
+
+<!-- Footer  Start -->
+<footer class="section_p1">
+    <div class="col">
+        <h3 class="textLogo">Classy <span>/</span> Curve</h3>
+        <h4>Contact</h4>
+        <p><strong><i class="fa-solid fa-location-dot"></i> Address: </strong>LPU BH3 Grand Trunck Road phagwara</p>
+        <p><strong><i class="fa-solid fa-phone"></i> Phone: </strong>+91 7991132070</p>
+        <p><strong><i class="fa-solid fa-envelope"></i> Email: </strong>Prashant@gmail.com</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <p>Secured Payment Gateway</p>
+        <img src="Image/pay.png" alt="X">
+    </div>
+
+    <div class="copyright">
+        <p>&#169 2023, Prashant Kumar | Classy Curve</p>
+    </div>
+</footer>
+<!-- Footer End -->
+    <script src="js.js"></script>
+</body>
+</html>
