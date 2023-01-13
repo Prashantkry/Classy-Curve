@@ -1126,9 +1126,10 @@ footer .copyright{
 
 
     #page_header {
-
+        background-repeat: no-repeat;
         height: 20vh;
-
+        background-size: cover;
+        background-position: center;
     }
 
 
