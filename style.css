@@ -1351,17 +1351,16 @@ footer .copyright{
         font-weight: 600;
     }
 
-
     /* svg */
-/*     #home svg {
-        width: 105%;
+    #home svg {
+        width: 100%;
     }
     #home svg text{
-        font-size: 23px;
+        font-size: 22px;
         fill: rgba(26, 48, 246, 0.892);
         stroke: rgba(244, 248, 245, 0.616);
         position: relative;
         font-weight: 800;
-    } */
+    }
 }
 /* Responsive Design End */
