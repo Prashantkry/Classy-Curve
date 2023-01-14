@@ -1185,7 +1185,7 @@ footer .copyright{
 @media (max-width:477px){
 
     /* side box home page */
-/*     .box_side {
+    /* .box_side {
         width: 35px;
         height: 158px;
         font-size: 12px;
@@ -1198,7 +1198,7 @@ footer .copyright{
     }
         
     .box_side::after {
-/*         content: "";
+    /*  content: "";
         width: 4px;
         height: 80px;
         background-color: var(--clr);
@@ -1353,7 +1353,7 @@ footer .copyright{
 
 
     /* svg */
-    #home svg {
+/*     #home svg {
         width: 105%;
     }
     #home svg text{
@@ -1362,6 +1362,6 @@ footer .copyright{
         stroke: rgba(244, 248, 245, 0.616);
         position: relative;
         font-weight: 800;
-    }
+    } */
 }
 /* Responsive Design End */
