@@ -146,31 +146,19 @@ button.common{
 /* ---------------------- */
 
 
-/* #home svg{
+#home svg{
     width: 35%;
-} */
-
-    #home svg {
-        width: 100%;
-    }
-    #home svg text{
-        font-size: 22px;
-        fill: rgba(26, 48, 246, 0.892);
-        stroke: rgba(244, 248, 245, 0.616);
-        position: relative;
-        font-weight: 800;
-    }
+}
 
 #home svg text{
-/*     font-size: 51px; */
-/*     fill: rgba(106, 136, 15, 0.413); */
+    font-size: 51px;
+    fill: rgba(106, 136, 15, 0.413);
     stroke-width: 1px ;
-/*     stroke: #fff; */
+    stroke: #fff;
     stroke-linejoin: round;
     stroke-dasharray:80 ;
     animation: animate_logo 2s linear infinite;
     font-family: 'Island Moments', cursive;
-
 }
 @keyframes animate_logo{
     100%{
@@ -1366,7 +1354,7 @@ footer .copyright{
     }
 
     /* svg */
-/*     #home svg {
+    #home svg {
         width: 100%;
     }
     #home svg text{
@@ -1375,6 +1363,6 @@ footer .copyright{
         stroke: rgba(244, 248, 245, 0.616);
         position: relative;
         font-weight: 800;
-    } */
+    }
 }
 /* Responsive Design End */
