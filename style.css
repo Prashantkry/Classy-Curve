@@ -1367,12 +1367,16 @@ footer .copyright{
     #home h2 {
         color: teal;
         /* line-height: 10px; */
-        font-size: 24.5px;
+        font-size: 25px;
         font-weight: 800;
         width: 100%;
         color: transparent;
         position: relative;
         top: 50%;
+    }
+
+    #home h2 .fontHome {
+        font-size: 48px;
     }
 
     #home h1{
@@ -1418,5 +1422,63 @@ footer .copyright{
         position: relative;
         font-weight: 800;
     } */
+}
+
+
+/* Phone more wider 399px */
+@media ((max-width:399px)){
+
+    /* home page  */
+    #home h2 {
+        color: teal;
+        /* line-height: 10px; */
+        font-size: 22px;
+        font-weight: 800;
+        width: 100%;
+        color: transparent;
+        position: relative;
+        top: 52%;
+    }
+
+    #home h2 .fontHome {
+        font-size: 32px;
+    }
+
+    #home h1{
+        /* position: relative;
+        top: 10%; */
+        font-size: 33px;
+        color: rgb(202, 12, 12);
+        font-weight: 800;
+    }
+    #home p{
+        /* position: relative;
+        top: 10%; */
+        font-size: 14px;
+        color: rgb(246, 246, 243);
+        font-weight: 600;
+    }
+    
+    #home h4 {
+        /* position: relative;
+        top: 12%; */
+        font-size: 18px;
+        color: rgb(246, 251, 251);
+        font-weight: 800;
+        animation: text_color infinite .5s;
+    }
+    @keyframes text_color{
+        100%{
+            color: rgb(10, 241, 102);
+        }
+    }
+
+    #home button{
+        /* position: relative;
+        top: 10%; */
+        font-size: 17px;
+        padding: 15px 80px 20px 95px;
+        font-weight:900;
+    }
 }
 /* Responsive Design End */
