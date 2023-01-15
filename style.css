@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Monsieur+La+Doulaise&display=swap');
+
 
 *{
     margin: 0;
@@ -173,13 +175,14 @@ button.common{
 #home h2{
     color: teal;
     line-height: 110px;
-    font-size: 55px;
+    font-size: 45px;
     color: transparent;
     -webkit-text-stroke: #fff;
     background: url(Image/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back_home 20s linear infinite;
+    font-family: 'Moon Dance', cursive;
 }
 
 @keyframes back_home{
@@ -190,6 +193,11 @@ button.common{
 
 #home h2 span{
     color: rgb(126, 128, 0);
+}
+#home h2 .fontHome{
+    color: rgb(0, 94, 128);
+    font-family: 'Island Moments', cursive;
+    font-size: 55px;
 }
 #home button{
     background-image: url("Image/button.png");
@@ -208,9 +216,6 @@ button.common{
 }
 #home h4{
     color: rgba(26, 120, 17, 0.811);
-}
-#home h1{
-    color: red;
 }
 /* <!-- Home end --> */
 
@@ -1067,7 +1072,7 @@ footer .copyright{
             position: relative;
             top: 5%;
             color: rgb(246, 246, 243);
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 600;
         }
         
