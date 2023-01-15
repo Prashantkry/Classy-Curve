@@ -144,7 +144,7 @@ button.common{
 
 /* ---------------------- */
 
-
+/* 
 #home svg{
     width: 35%;
 }
@@ -164,7 +164,7 @@ button.common{
     100%{
         stroke-dashoffset: 160;
     }
-}
+} */
 /* ---------------------- */
 
 #home h4{
@@ -172,8 +172,25 @@ button.common{
 }
 #home h2{
     color: teal;
+    line-height: 110px;
+    font-size: 55px;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    background: url(Image/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back_home 20s linear infinite;
 }
 
+@keyframes back_home{
+    100%{
+        background-position:2000px 0 ;
+    }
+}
+
+#home h2 span{
+    color: rgb(126, 128, 0);
+}
 #home button{
     background-image: url("Image/button.png");
     background-color: transparent;
@@ -186,6 +203,15 @@ button.common{
     padding: 14px 80px 14px 65px;
 }
 
+#home h1{
+    color: red;
+}
+#home h4{
+    color: rgba(26, 120, 17, 0.811);
+}
+#home h1{
+    color: red;
+}
 /* <!-- Home end --> */
 
 
@@ -1019,6 +1045,50 @@ footer .copyright{
     }
 
     /* arranging background */
+        /* home page  */
+        #home h2 {
+            color: teal;
+            /* line-height: 10px; */
+            font-size: 45px;
+            font-weight: 800;
+            width: 100%;
+            color: transparent;
+            position: relative;
+            top: 42%;
+        }
+    
+        #home h1{
+            position: relative;
+            top: 5%;
+            color: rgb(202, 12, 12);
+            font-weight: 800;
+        }
+        #home p{
+            position: relative;
+            top: 5%;
+            color: rgb(246, 246, 243);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        #home h4 {
+            position: relative;
+            top:5%;
+            /* font-size: 20px; */
+            color: rgb(246, 251, 251);
+            font-weight: 800;
+            animation: text_color infinite .5s;
+        }
+        @keyframes text_color{
+            100%{
+                color: rgb(9, 255, 0);
+            }
+        }
+    
+        #home button{
+            position: relative;
+            top: 7%;
+        }
     #home{
         height: 90vh;
         padding: 0 80px; 
@@ -1109,14 +1179,14 @@ footer .copyright{
     }
 
     /* svg */
-    #home svg {
+    /* #home svg {
         width: 48%;
     }
     #home svg text{
         font-size: 30px;
         fill: rgba(246, 96, 26, 0.892);
         position: relative;
-    }
+    } */
 }
 
 
@@ -1164,6 +1234,8 @@ footer .copyright{
     h2{
         font-size: 32px;
     }
+
+
     #navbar{
         padding:20% 20px;
         background-position: 55%;
@@ -1284,22 +1356,54 @@ footer .copyright{
         padding: 20px;
     }
 
+    
+
+    /* home page  */
+    #home h2 {
+        color: teal;
+        /* line-height: 10px; */
+        font-size: 24.5px;
+        font-weight: 800;
+        width: 100%;
+        color: transparent;
+        position: relative;
+        top: 50%;
+    }
+
     #home h1{
+        /* position: relative;
+        top: 10%; */
         color: rgb(202, 12, 12);
+        font-weight: 800;
     }
     #home p{
+        /* position: relative;
+        top: 10%; */
         color: rgb(246, 246, 243);
         font-weight: 600;
     }
-
+    
     #home h4 {
-        color: rgba(0, 255, 255, 0.896);
-        font-weight: 600;
+        /* position: relative;
+        top: 12%; */
+        /* font-size: 20px; */
+        color: rgb(246, 251, 251);
+        font-weight: 800;
+        animation: text_color infinite .5s;
+    }
+    @keyframes text_color{
+        100%{
+            color: rgb(9, 255, 0);
+        }
     }
 
+    #home button{
+        /* position: relative;
+        top: 10%; */
+    }
 
     /* svg */
-    #home svg {
+    /* #home svg {
         width: 105%;
     }
     #home svg text{
@@ -1308,6 +1412,6 @@ footer .copyright{
         stroke: rgba(244, 248, 245, 0.616);
         position: relative;
         font-weight: 800;
-    }
+    } */
 }
 /* Responsive Design End */
