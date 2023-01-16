@@ -622,6 +622,9 @@ footer .copyright{
 
 #page_header{
     background-image: url("Image/banner/b1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 40vh;
     display: flex;
@@ -1147,9 +1150,7 @@ footer .copyright{
 
 
     #page_header {
-
         height: 20vh;
-
     }
 
 
@@ -1157,7 +1158,7 @@ footer .copyright{
     #page_header1 {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left;
+        background-position: center;
         height: 18vh;
     }
 
